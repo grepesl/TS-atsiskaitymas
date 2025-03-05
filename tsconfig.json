@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "target": "ES2017",
+    // "rootDir": "./",
+    // "outDir": "./scripts",
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedParameters": true,
+    //"moduleDetection": "force"
+  },
+  "files": [
+    //"Task 1/script.ts",
+    //"Task 2/script.ts",
+    // "Task 3/script.ts",
+    // "Task 4/script.ts",
+    // "Task 5/script.ts",
+    // "Task 6/script.ts",
+    // "Task 7/script.ts",
+     "Task 8/script.ts",
+    // "Task 9/script.ts"
+  ]
+}

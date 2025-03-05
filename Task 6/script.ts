@@ -14,3 +14,24 @@ Pvz.:
   new_potion.color  =  [127, 159, 127]
   new_potion.volume =  19
 ------------------------------------------------------------------------------------------------------ */
+
+class Potion {
+  color: number[];
+  volume: number;
+ 
+  constructor(color: number[], volume: number) {
+    this.color = color;
+    this.volume = volume;
+  }
+ 
+  mix(potion: Potion) {
+    const totalVolume: number = potion.volume + this.volume;
+    const colors: number[] = [];
+    for(let i = 0; i < this.color.length; i++ ){
+      const newColor: number = (this.color[i] * this.volume + potion.color[i] * potion.volume) / totalVolume;
+      colors.push(newColor);
+    }
+
+    return new Potion(colors, totalVolume)
+  }
+}
